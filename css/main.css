@@ -85,6 +85,10 @@ body {
     margin-left: 30px;
 }
 
+.footer__img:first-child {
+    margin-left: 9px;
+}
+
 .footer__img:hover {
     opacity: 75%;
 }
