@@ -1,0 +1,24 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "",
+    "compile-sass": "node-sass scss/main.scss css/style.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/katieraby/katieraby.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/katieraby/katieraby.github.io/issues"
+  },
+  "homepage": "https://github.com/katieraby/katieraby.github.io#readme",
+  "devDependencies": {
+    "node-sass": "^4.13.1"
+  }
+}
