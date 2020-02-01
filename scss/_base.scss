@@ -1,0 +1,8 @@
+//holds the boilerplate code - standard styles such as typographic rules, commonly used throughout project
+
+@mixin transform($property) {
+    -webkit-transform: $property;
+    -ms-transform: $property;
+    transform: $property;
+}
+
