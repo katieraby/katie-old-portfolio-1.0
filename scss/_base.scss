@@ -15,5 +15,46 @@
         font-weight: $font-bold;
         line-height: 1.5;
         color: $main-copy-color;
+
+        &--text-white {
+            color: $text-white;
+        }
+    }
+
+    &__h3 {
+        position: relative;
+        font-family: $font-stack-main;
+        font-size: $h3-size;
+        font-weight: $font-regular;
+        line-height: 1.2;
+        color: $main-copy-color;
+    }
+}
+
+.footer {
+    text-align: center;
+    padding-bottom: 20px;
+
+    &__p {
+        font-family: $font-stack-main;
+        font-size: $p-copy-size;
+        font-weight: $font-bold;
+        line-height: 1.2;
+        color: $darker-pink;
+    }
+}
+
+.nav {
+    text-align: center;
+    margin-top: 40px;
+
+    &__a {
+        font-family: $font-stack-main;
+        font-size: $nav-text-size;
+        font-weight: $font-bold;
+        color: $darker-pink;
+        text-decoration: none;
+        text-transform: uppercase;
+        margin: 0px 40px;
     }
 }
