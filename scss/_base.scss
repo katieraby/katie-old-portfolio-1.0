@@ -1,4 +1,4 @@
-//holds the boilerplate code - standard styles such as typographic rules, commonly used throughout project
+// @use './variables';
 
 @mixin transform($property) {
     -webkit-transform: $property;
@@ -6,3 +6,14 @@
     transform: $property;
 }
 
+.section {
+    padding: 10px 30px 10px 30px;
+
+    &__h2 {
+        font-family: $font-stack-header;
+        font-size: $h2-size;
+        font-weight: $font-bold;
+        line-height: 1.5;
+        color: $main-copy-color;
+    }
+}

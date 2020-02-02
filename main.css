@@ -1,8 +1,12 @@
+body {
+  background-color: red;
+  border: yellow; }
+
 .section {
-  padding: 10px 30px 10px 30px; }
+  padding: 10px 30px 10px 30px;
+  background-color: red; }
   .section__h2 {
     font-family: "Lato", "Lucida Grande", Helvetica, Arial, sans-serif;
     font-size: 34px;
-    font-weight: 700;
     line-height: 1.5;
     color: #707070; }
