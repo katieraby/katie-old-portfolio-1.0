@@ -4,3 +4,41 @@
 
 
 //intro-specific-styles
+.intro {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    column-gap: 20px;
+    grid-template-rows: 100vh;
+
+    &__img {
+        grid-column: 2;
+        width: 140px;
+        height: 140px;
+        object-fit: cover;
+        object-position: -10% 12%;
+        box-shadow: 0px 4px 7px #0000004D;
+        border-radius: 50%;
+    }
+
+    &__img:hover {
+        opacity: 72%;
+    }
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 500px 500px;
+
+    &__card {
+        text-align: center;
+        padding: 10px 10px;
+        width: 70%;
+        height: 90%;
+        box-shadow: 12px 12px 30px #00000029;
+    }
+
+    &__p {
+        font-family: $font-stack-p;
+    }
+}
