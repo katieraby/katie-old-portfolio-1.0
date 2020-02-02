@@ -1,8 +1,89 @@
 .section {
   padding: 10px 30px 10px 30px; }
+  .section__h1 {
+    text-align: center; }
   .section__h2 {
-    font-family: "Lato", "Lucida Grande", Helvetica, Arial, sans-serif;
-    font-size: 34px;
+    font-family: "Playfair Display", "Times New Roman", serif;
+    text-align: center;
+    font-size: 46px;
     font-weight: 700;
     line-height: 1.5;
+    color: #707070;
+    letter-spacing: 1px; }
+  .section__h3 {
+    position: relative;
+    text-align: center;
+    font-family: "Lato", "Lucida Grande", Helvetica, Arial, sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 1.2;
     color: #707070; }
+
+.footer {
+  text-align: center;
+  padding-bottom: 20px; }
+  .footer__p {
+    font-family: "Lora", "Helvetica", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #F1B9CB; }
+
+.nav {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px; }
+  .nav__a {
+    font-family: "Lato", "Lucida Grande", Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #F1B9CB;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 0px 40px; }
+
+.intro {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  column-gap: 20px;
+  grid-template-rows: 100vh; }
+  .intro__container {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    justify-items: center; }
+  .intro__img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    object-position: -10% 12%;
+    box-shadow: 0px 4px 7px #0000004D;
+    border-radius: 50%; }
+  .intro__img:hover {
+    opacity: 72%; }
+
+.projects {
+  background: white;
+  background: linear-gradient(180deg, white 12%, rgba(251, 196, 255, 0.940214) 47%, #fad1fc 58%, white 87%);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 500px 500px;
+  justify-items: center;
+  z-index: -1; }
+  .projects__card {
+    background-color: #fff;
+    text-align: center;
+    padding: 10px 10px;
+    width: 85%;
+    height: 90%;
+    box-shadow: 12px 12px 30px #00000029; }
+  .projects__img {
+    background: #c5c5c5;
+    width: 80%;
+    height: 30%;
+    margin-top: 20px; }
+  .projects__p {
+    font-family: "Lato", "Lucida Grande", Helvetica, Arial, sans-serif;
+    padding: 5px 10px; }
+
+.icons {
+  text-align: center; }

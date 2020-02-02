@@ -9,21 +9,33 @@
 .section {
     padding: 10px 30px 10px 30px;
 
+    &__h1 {
+        text-align: center;
+    }
+
     &__h2 {
         font-family: $font-stack-header;
+        text-align: center;
         font-size: $h2-size;
         font-weight: $font-bold;
         line-height: 1.5;
         color: $main-copy-color;
-
-        &--text-white {
-            color: $text-white;
-        }
+        letter-spacing: 1px;
     }
+
+        // &__h2--text-white {
+           
+        //     color: $text-white;
+        // }
+
+        // &__h2--title {
+        //     font-size: 50px;
+        // }
 
     &__h3 {
         position: relative;
-        font-family: $font-stack-main;
+        text-align: center;
+        font-family: $font-stack-p;
         font-size: $h3-size;
         font-weight: $font-regular;
         line-height: 1.2;
@@ -47,9 +59,10 @@
 .nav {
     text-align: center;
     margin-top: 40px;
+    margin-bottom: 40px;
 
     &__a {
-        font-family: $font-stack-main;
+        font-family: $font-stack-p;
         font-size: $nav-text-size;
         font-weight: $font-bold;
         color: $darker-pink;
