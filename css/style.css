@@ -49,6 +49,16 @@
 .cls-1 {
   fill: none; }
 
+.catsvg {
+  stroke: #000;
+  stroke-dasharray: 100;
+  stroke-dashoffset: 0;
+  overflow: visible;
+  top: 50px;
+  left: 20px;
+  height: 100px;
+  width: 100px; }
+
 .intro {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
@@ -71,14 +81,12 @@
     border-radius: 50%; }
   .intro__img:hover {
     opacity: 72%; }
-
-.icons {
-  justify-self: center;
-  position: absolute; }
-  .icons:before {
+  .intro__icons {
+    position: absolute; }
+  .intro:before {
     content: " ";
     display: block;
-    position: absolute;
+    position: relative;
     background-color: #F1B9CB;
     opacity: 0.4;
     height: 60px;
@@ -86,7 +94,7 @@
     top: 25px;
     left: 10px;
     z-index: -1; }
-  .icons__img {
+  .intro--img {
     padding: 20px 10px 20px 10px;
     height: 12%;
     width: 12%; }
