@@ -7,18 +7,19 @@
         margin-top: -50px; } }
   .section__h2 {
     font-family: "Playfair Display", "Times New Roman", serif;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
     font-size: 46px;
     font-weight: 700;
     line-height: 1.5;
     color: #707070;
     letter-spacing: 1px; }
-    .section__h2--text-white {
-      color: #FFF; }
+    .section__h2--text-pink {
+      color: #F1B9CB; }
     .section__h2--title {
       font-size: 50px; }
   .section__h3 {
-    position: relative;
     text-align: center;
     font-family: "Lato", "Lucida Grande", Helvetica, Arial, sans-serif;
     font-size: 28px;
