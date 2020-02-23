@@ -31,18 +31,24 @@
   .section__h3 {
     text-align: center;
     font-family: "Lato", "Lucida Grande", Helvetica, Arial, sans-serif;
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 400;
     line-height: 1.2;
-    color: #707070; }
+    color: #707070;
+    margin-bottom: 50px; }
     @media only screen and (max-width: 640px) {
       .section__h3 {
-        font-size: 22px; } }
+        font-size: 20px;
+        margin-bottom: 30px; } }
   .section__p {
     text-align: center;
     font-family: "Lato", "Lucida Grande", Helvetica, Arial, sans-serif;
     font-size: 16px;
-    color: #707070; }
+    color: #707070;
+    margin-bottom: 90px; }
+    @media only screen and (max-width: 640px) {
+      .section__p {
+        margin-bottom: 30px; } }
 
 .footer {
   text-align: center;
@@ -80,8 +86,8 @@
   stroke-dasharray: 141;
   stroke-dashoffset: 141;
   overflow: visible;
-  top: 44px;
-  left: 18px;
+  top: 212px;
+  left: 91px;
   height: 100px;
   width: 100px;
   animation: catsvg-anim 3s linear 0s forwards;
@@ -90,7 +96,7 @@
     .catsvg {
       height: 50px;
       width: 50px;
-      left: 25px; } }
+      left: 5px; } }
 
 @keyframes catsvg-anim {
   0% {
@@ -180,6 +186,30 @@
     word-wrap: break-word;
     hyphens: auto; }
 
+.contact__icons {
+  display: flex;
+  width: auto;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f6e4f5; }
+  .contact__icons--img {
+    margin-left: auto;
+    padding: 10px 5px 10px 5px;
+    height: 2em;
+    width: 2em; }
+    .contact__icons--img:first-child {
+      padding-left: 0px;
+      padding-top: 5px;
+      margin-left: 0px;
+      height: 3em;
+      width: 3em; }
+    .contact__icons--img:last-child {
+      margin-right: 0px; }
+  @media only screen and (max-width: 640px) {
+    .contact__icons {
+      display: none; } }
+
 .contact-container {
   display: grid;
   grid-template-columns: 0.8fr 1fr;
@@ -192,6 +222,9 @@
 
 .contact-container-form {
   width: 80%; }
+  @media only screen and (max-width: 640px) {
+    .contact-container-form {
+      margin-top: 40px; } }
 
 .form__label {
   display: block;
