@@ -23,6 +23,11 @@
       color: #F1B9CB; }
     .section__h2--title {
       font-size: 50px; }
+    @media only screen and (max-width: 640px) {
+      .section__h2 {
+        margin-top: 5px;
+        margin-bottom: 10px;
+        font-size: 36px; } }
   .section__h3 {
     text-align: center;
     font-family: "Lato", "Lucida Grande", Helvetica, Arial, sans-serif;
@@ -30,6 +35,9 @@
     font-weight: 400;
     line-height: 1.2;
     color: #707070; }
+    @media only screen and (max-width: 640px) {
+      .section__h3 {
+        font-size: 22px; } }
   .section__p {
     text-align: center;
     font-family: "Lato", "Lucida Grande", Helvetica, Arial, sans-serif;
@@ -58,6 +66,10 @@
     text-decoration: none;
     text-transform: uppercase;
     margin: 0px 40px; }
+    @media screen and (max-width: 588px) {
+      .nav__a {
+        display: block;
+        margin-bottom: 15px; } }
 
 .cls-1 {
   fill: none; }
@@ -202,6 +214,9 @@
     border-color: #F1B9CB; }
   .form__input-field--textarea {
     height: 60px; }
+  @media only screen and (max-width: 640px) {
+    .form__input-field {
+      width: 100%; } }
 
 .form__button {
   width: 82%;
@@ -225,3 +240,6 @@
   .form__button:focus {
     border-color: #F1B9CB;
     color: #F1B9CB; }
+  @media only screen and (max-width: 640px) {
+    .form__button {
+      width: 100%; } }

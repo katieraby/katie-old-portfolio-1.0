@@ -147,6 +147,8 @@
     &:first-child {
       padding-top: 0px;
     }
+
+    
   }
 
   &__input-field {
@@ -168,6 +170,10 @@
      &--textarea {
        height: 60px;
      }
+
+     @media only screen and (max-width: 640px) {
+           width: 100%;
+        }
 
     }
     
@@ -199,5 +205,9 @@
       border-color: $text-highlight-pink;
 	    color: $darker-pink;
     }
+
+    @media only screen and (max-width: 640px) {
+           width: 100%;
+        }
   }
 }

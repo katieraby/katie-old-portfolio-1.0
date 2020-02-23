@@ -41,6 +41,11 @@
             font-size: 50px;
         } 
 
+        @media only screen and (max-width: 640px) {
+            margin-top: 5px;
+            margin-bottom: 10px;
+            font-size: $mob-h2-size;
+         }
     }
 
 
@@ -52,6 +57,10 @@
         font-weight: $font-regular;
         line-height: 1.2;
         color: $main-copy-color;
+
+        @media only screen and (max-width: 640px) {
+           font-size: $mob-h3-size;
+        }
     }
 
     &__p {
@@ -88,5 +97,12 @@
         text-decoration: none;
         text-transform: uppercase;
         margin: 0px 40px;
+
+        @media screen and (max-width: 588px) {
+        display: block;
+        margin-bottom: 15px;
+        }
     }
+
+    
 }
