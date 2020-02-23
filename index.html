@@ -156,32 +156,33 @@
         <div class="contact-container">
             <div class="contact-container-text">
                 <h2 class="section__h2 section__h2--contact">Get in touch</h2>
-                <h3 class="section__h3">
+                <p class="section__p">
                     Do you want to collaborate on a project, or think I’m suitable for a
                     job opening you have? Fill out my contact form and I’ll get back to
                     you at my earliest convenience.
-                    </p>
-                    <div class="icons">
-                        <img class="icons__img" alt="Github logo" src="assets/img/Icon awesome-github@2x.png" />
-                        <img class="icons__img" alt="Github logo" src="assets/img/Icon awesome-codepen@2x.png" />
-                        <img class="icons__img" alt="Github logo" src="assets/img/Icon awesome-twitter@2x.png" />
-                        <img class="icons__img" alt="Github logo" src="assets/img/Icon awesome-linkedin@2x.png" />
-                    </div>
+                </p>
+                <div class="icons">
+                    <img class="icons__img" alt="Github logo" src="assets/img/Icon awesome-github@2x.png" />
+                    <img class="icons__img" alt="Github logo" src="assets/img/Icon awesome-codepen@2x.png" />
+                    <img class="icons__img" alt="Github logo" src="assets/img/Icon awesome-twitter@2x.png" />
+                    <img class="icons__img" alt="Github logo" src="assets/img/Icon awesome-linkedin@2x.png" />
+                </div>
             </div>
             <div class="contact-container-form">
-                <form id="contact-form" class="form" action="">
-                    <label class="form__label" id="name-label">
-                        <input class="form__input-field--small" type="text" required
+                <form id="contact-form" class="form" action="https://formspree.io/mvorzzlq" method="POST">
+                    <label class="form__label" id="name-label"> Your Name:
+                        <input class="form__input-field" type="text" name="name" required
                             placeholder="Please enter your name" />
                     </label>
-                    <label class="form__label" id="name-label">
-                        <input class="form__input-field--small" type="email" required
+                    <label class="form__label" id="name-label"> Your Email Address:
+                        <input class="form__input-field" type="email" name="_replyto" required
                             placeholder="Enter your email address" />
                     </label>
-                    <label class="form__label" id="name-label">
-                        <input class="form__input-field--large" type="text" required
-                            placeholder="What are you getting in touch about? Tell me more here." />
+                    <label class="form__label" id="name-label"> Your Message:
+                        <textarea class="form__input-field form__input-field--textarea" type="text" name="message"
+                            required placeholder="What are you getting in touch about? Tell me more here."></textarea>
                     </label>
+                    <button class="form__button" type="submit" value="Send">Send</button>
                 </form>
             </div>
         </div>

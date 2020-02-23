@@ -107,6 +107,7 @@
 
   &__p {
     font-family: $font-stack-p;
+    color: $main-copy-color;
     padding: 5px 10px;
     overflow-wrap: break-word;
     word-wrap: break-word;
@@ -123,5 +124,75 @@
 
   @media only screen and (max-width: 640px) {
       grid-template-columns: 1fr;
+  }
+}
+
+.contact-container-form {
+  width: 80%;
+}
+
+.form {
+  &__label {
+  display: block;
+  padding-top: 25px;
+  font-size: 15px;
+  font-family: $font-stack-p;
+	color: $darker-pink;
+	margin: 0;
+	opacity: 1;
+	-webkit-transition: .333s ease top, .333s ease opacity;
+	transition: .333s ease top, .333s ease opacity;
+  }
+
+  &__input-field {
+    width: 80%;
+    padding-top: 10px;
+    display: block;
+    border-radius: 0;
+	  border-color: #ccc;
+   	border-width: 0 0 2px 0;
+   	border-style: none none solid none;
+     box-shadow: none;
+     resize: none;
+     
+     &:focus {
+      	box-shadow: none;
+	      border-color: $text-highlight-pink;
+     }
+
+     &--textarea {
+       height: 60px;
+     }
+
+    }
+    
+  &__button {
+    width: 82%;
+    background: 0 0 #ffffff;
+    border: 1px solid #2f323a;
+    border-radius: 3px;
+    color: #2f323a;
+    font-family: $font-stack-p;
+    font-size: 16px;
+    line-height: inherit;
+    margin: 30px 0;
+    padding: 10px 50px;
+    text-transform: uppercase;
+    transition: all 0.25s ease 0s;
+
+    &:hover  {
+      border-color: $text-highlight-pink;
+	    color: $darker-pink;
+    }
+
+    &:active {
+      border-color: $text-highlight-pink;
+	    color: $darker-pink;
+    }
+
+    &:focus {
+      border-color: $text-highlight-pink;
+	    color: $darker-pink;
+    }
   }
 }

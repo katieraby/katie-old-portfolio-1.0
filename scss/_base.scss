@@ -30,7 +30,7 @@
 
         &--contact {
             margin-top: 0px;
-            font-size: 40px;
+            font-size: 32px;
         }
 
         &--text-pink {
@@ -51,6 +51,13 @@
         font-size: $h3-size;
         font-weight: $font-regular;
         line-height: 1.2;
+        color: $main-copy-color;
+    }
+
+    &__p {
+        text-align: center;
+        font-family: $font-stack-p;
+        font-size: $p-copy-size;
         color: $main-copy-color;
     }
 }
