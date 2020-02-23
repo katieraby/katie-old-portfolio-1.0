@@ -52,18 +52,32 @@
       height: 2.5em;
       width: 2.5em;
 
+      @media only screen and (max-width: 640px) {
+        padding: 15px 5px 15px 5px;
+        height: 2em;
+        width: 2em;
+    }
+
       &:first-child {
         padding-left: 0px;
         padding-top: 15px;
         margin-left: 5px;
         height: 3.5em;
         width: 3.5em;
+
+        @media only screen and (max-width: 640px) {
+        height: 3em;
+        width: 3em;
+        padding-top: 10px;
+    }
       }
 
       &:last-child {
         margin-right: 0px;
       }
     }
+
+      
   }
 
 }
@@ -95,7 +109,12 @@
     min-height: 500px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
 
+    @media only screen and (max-width: 640px) {
+     width: 90%;
+    }
+
   }
+  
   &__img {
     background: rgb(197, 197, 197);
     width: 100%;

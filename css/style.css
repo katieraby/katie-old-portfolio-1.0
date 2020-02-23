@@ -86,8 +86,8 @@
   stroke-dasharray: 141;
   stroke-dashoffset: 141;
   overflow: visible;
-  top: 212px;
-  left: 91px;
+  top: 143px;
+  left: 22px;
   height: 100px;
   width: 100px;
   animation: catsvg-anim 3s linear 0s forwards;
@@ -96,7 +96,7 @@
     .catsvg {
       height: 50px;
       width: 50px;
-      left: 5px; } }
+      left: 16px; } }
 
 @keyframes catsvg-anim {
   0% {
@@ -143,12 +143,22 @@
       padding: 20px 10px 20px 10px;
       height: 2.5em;
       width: 2.5em; }
+      @media only screen and (max-width: 640px) {
+        .intro__icons--img {
+          padding: 15px 5px 15px 5px;
+          height: 2em;
+          width: 2em; } }
       .intro__icons--img:first-child {
         padding-left: 0px;
         padding-top: 15px;
         margin-left: 5px;
         height: 3.5em;
         width: 3.5em; }
+        @media only screen and (max-width: 640px) {
+          .intro__icons--img:first-child {
+            height: 3em;
+            width: 3em;
+            padding-top: 10px; } }
       .intro__icons--img:last-child {
         margin-right: 0px; }
 
@@ -174,6 +184,9 @@
     width: 80%;
     min-height: 500px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15); }
+    @media only screen and (max-width: 640px) {
+      .projects__card {
+        width: 90%; } }
   .projects__img {
     background: #c5c5c5;
     width: 100%;
