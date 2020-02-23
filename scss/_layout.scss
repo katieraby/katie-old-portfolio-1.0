@@ -9,6 +9,11 @@
   grid-template-rows: 100vh;
   grid-template-areas: "SVG-left main SVG-right";
   justify-items: center;
+
+  @media only screen and (max-width: 640px) {
+    display: block;
+    padding: 35px;
+  }
   
 
   &__container {
@@ -18,6 +23,10 @@
 
   &__left {
     grid-area: SVG-left;
+
+     @media only screen and (max-width: 640px) {
+      display: inline-block;
+    }
   }
 
   &__img {
@@ -35,31 +44,16 @@
 
   &__icons {
     display: flex;
-    flex-wrap: wrap;
     width: 70%;
-    margin-top: -20px;
     margin-left: auto;
     margin-right: auto;
-
-    &:before {
-      content: " ";
-      flex-basis: 100%;
-      position: relative; 
-      background-color: $text-highlight-pink;
-      opacity: 0.3;
-      height: 58px;
-      width: 80px;
-      top: 50px;
-      left: 0px;
-      z-index: -1;
-    }
+    background-color: $icons-highlight;
     
     &--img {
-      position: relative;
       margin-left: auto;
       padding: 20px 10px 20px 10px;
-      height: 10%;
-      width: 10%;
+      height: 1em;
+      width: 1em;
 
       &:first-child {
         padding-left: 0px;
@@ -77,11 +71,6 @@
 
 }
 
-//icon styling
-
-//     height: 50%;
-//     width: 50%;
-
 //projects specific styles
 .projects {
   background: rgb(255, 255, 255);
@@ -94,22 +83,34 @@
   );
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 500px 500px;
+  grid-template-rows: auto auto;
+  grid-row-gap: 1em;
   justify-items: center;
   z-index: -1;
+
+  @media only screen and (min-width: 640px) and (max-width: 980px) {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto auto;
+  }
+
+  @media only screen and (max-width: 640px) {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto auto auto auto auto;
+  }
 
   &__card {
     background-color: #fff;
     text-align: center;
     padding: 10px 10px;
     width: 80%;
-    height: 90%;
+    min-height: 500px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+
   }
   &__img {
     background: rgb(197, 197, 197);
     width: 100%;
-    height: 40%;
+    height: 200px;
   }
 
   &__p {
@@ -127,4 +128,8 @@
   grid-template-columns: 0.8fr 1fr;
   grid-template-rows: auto auto;
   justify-items: center;
+
+  @media only screen and (max-width: 640px) {
+      grid-template-columns: 1fr;
+  }
 }

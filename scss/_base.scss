@@ -9,6 +9,10 @@
 
     &__h1 {
         text-align: center;
+
+        @media only screen and (max-width: 640px) {
+            margin-top: -50px;
+         }
     }
 
     
