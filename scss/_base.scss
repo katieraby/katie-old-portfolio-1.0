@@ -31,6 +31,10 @@
         &--contact {
             margin-top: 0px;
             font-size: 32px;
+
+            @media only screen and (max-width: 640px) {
+                display: none;
+            }
         }
 
         &--text-pink {
