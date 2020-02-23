@@ -75,12 +75,13 @@
   fill: none; }
 
 .catsvg {
+  position: absolute;
   stroke: #000;
   stroke-dasharray: 141;
   stroke-dashoffset: 141;
   overflow: visible;
-  top: 50px;
-  left: 20px;
+  top: 247px;
+  left: 37px;
   height: 100px;
   width: 100px;
   animation: catsvg-anim 3s linear 0s forwards;
@@ -210,6 +211,9 @@
   box-shadow: none;
   resize: none; }
   .form__input-field:focus {
+    box-shadow: none;
+    border-color: #F1B9CB; }
+  .form__input-field:hover {
     box-shadow: none;
     border-color: #F1B9CB; }
   .form__input-field--textarea {
