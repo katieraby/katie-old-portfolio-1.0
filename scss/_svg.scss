@@ -9,11 +9,17 @@
   stroke-dashoffset: 141;
   overflow: visible;
   top: random(250) + px;
-  left: random(130) + px;
+  left: random(100) + px;
   height: 100px;
   width: 100px;
   animation: catsvg-anim 3s linear 0s forwards;
-  transform: rotate(-20deg)
+  transform: rotate(-20deg);
+
+  @media only screen and (max-width: 640px) {
+      height: 50px;
+      width: 50px;
+      left: random(30) + px;
+    }
 }
 
 @keyframes catsvg-anim {

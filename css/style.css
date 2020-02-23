@@ -80,12 +80,17 @@
   stroke-dasharray: 141;
   stroke-dashoffset: 141;
   overflow: visible;
-  top: 247px;
-  left: 37px;
+  top: 44px;
+  left: 18px;
   height: 100px;
   width: 100px;
   animation: catsvg-anim 3s linear 0s forwards;
   transform: rotate(-20deg); }
+  @media only screen and (max-width: 640px) {
+    .catsvg {
+      height: 50px;
+      width: 50px;
+      left: 25px; } }
 
 @keyframes catsvg-anim {
   0% {
@@ -122,21 +127,22 @@
     opacity: 72%; }
   .intro__icons {
     display: flex;
-    width: 70%;
+    width: auto;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
     background-color: #f6e4f5; }
     .intro__icons--img {
       margin-left: auto;
       padding: 20px 10px 20px 10px;
-      height: 1em;
-      width: 1em; }
+      height: 2.5em;
+      width: 2.5em; }
       .intro__icons--img:first-child {
         padding-left: 0px;
         padding-top: 15px;
-        margin-left: 10px;
-        height: 13%;
-        width: 13%; }
+        margin-left: 5px;
+        height: 3.5em;
+        width: 3.5em; }
       .intro__icons--img:last-child {
         margin-right: 0px; }
 

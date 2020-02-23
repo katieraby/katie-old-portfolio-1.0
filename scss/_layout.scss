@@ -40,7 +40,8 @@
 
   &__icons {
     display: flex;
-    width: 70%;
+    width: auto;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
     background-color: $icons-highlight;
@@ -48,15 +49,15 @@
     &--img {
       margin-left: auto;
       padding: 20px 10px 20px 10px;
-      height: 1em;
-      width: 1em;
+      height: 2.5em;
+      width: 2.5em;
 
       &:first-child {
         padding-left: 0px;
         padding-top: 15px;
-        margin-left: 10px;
-        height: 13%;
-        width: 13%;
+        margin-left: 5px;
+        height: 3.5em;
+        width: 3.5em;
       }
 
       &:last-child {
