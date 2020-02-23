@@ -4,11 +4,22 @@
 
 .catsvg {
   stroke: #000;
-  stroke-dasharray: 100;
-  stroke-dashoffset: 0;
+  stroke-dasharray: 141;
+  stroke-dashoffset: 141;
   overflow: visible;
   top: 50px;
   left: 20px;
   height: 100px;
   width: 100px;
+  animation: catsvg-anim 3s linear 0s forwards;
+  transform: rotate(-20deg)
+}
+
+@keyframes catsvg-anim {
+  0% {
+    stroke-dashoffset: 141px;
+  }
+  100% {
+    stroke-dashoffset: 0px;
+  }
 }
