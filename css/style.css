@@ -89,8 +89,8 @@
   stroke-dasharray: 141;
   stroke-dashoffset: 141;
   overflow: visible;
-  top: 95px;
-  left: 10px;
+  top: 70px;
+  left: 28px;
   height: 100px;
   width: 100px;
   animation: catsvg-anim 3s linear 0s forwards;
@@ -99,7 +99,7 @@
     .catsvg {
       height: 50px;
       width: 50px;
-      left: 8px; } }
+      left: 19px; } }
 
 @keyframes catsvg-anim {
   0% {
