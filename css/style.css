@@ -165,7 +165,8 @@
   display: grid;
   grid-template-columns: 0.8fr 1fr;
   grid-template-rows: auto auto;
-  justify-items: center; }
+  justify-items: center;
+  grid-column-gap: 20px; }
   @media only screen and (max-width: 640px) {
     .contact-container {
       grid-template-columns: 1fr; } }
@@ -183,6 +184,8 @@
   opacity: 1;
   -webkit-transition: .333s ease top, .333s ease opacity;
   transition: .333s ease top, .333s ease opacity; }
+  .form__label:first-child {
+    padding-top: 0px; }
 
 .form__input-field {
   width: 80%;
