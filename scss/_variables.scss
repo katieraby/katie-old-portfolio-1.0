@@ -1,13 +1,14 @@
 //colours
 $icons-highlight: rgba(246, 228, 245, 1);
+$icons-purple: rgb(250, 182, 247);
 
 //text colours
 $main-copy-color: #707070;
-$text-white: #FFF;
-$text-highlight-pink: #F1B9CB;
-$text-highlight-purple: #E8ACEC;
-$text-highlight-header-pink: #FCDBFD;
-$darker-pink: #F1B9CB;
+$text-white: #fff;
+$text-highlight-pink: #f1b9cb;
+$text-highlight-purple: #e8acec;
+$text-highlight-header-pink: #fcdbfd;
+$darker-pink: #f1b9cb;
 
 //text sizing
 $nav-text-size: 24px;
@@ -32,9 +33,9 @@ $button-text-size: 24px;
 $mb-button-text-size: 22px;
 
 //fonts
-$font-stack-header: 'Playfair Display', 'Times New Roman', serif;
-$font-stack-main: 'Lora', 'Helvetica', Arial, sans-serif;
-$font-stack-p: 'Lato', 'Lucida Grande', Helvetica, Arial, sans-serif;
+$font-stack-header: "Playfair Display", "Times New Roman", serif;
+$font-stack-main: "Lora", "Helvetica", Arial, sans-serif;
+$font-stack-p: "Lato", "Lucida Grande", Helvetica, Arial, sans-serif;
 
 $font-bold: 700;
 $font-regular: 400;

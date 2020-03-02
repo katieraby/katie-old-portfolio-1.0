@@ -1,4 +1,4 @@
-.cls-1 {
+.cat-fill {
   fill: none;
 }
 
@@ -16,10 +16,10 @@
   transform: rotate(-20deg);
 
   @media only screen and (max-width: 640px) {
-      height: 50px;
-      width: 50px;
-      left: random(30) + px;
-    }
+    height: 50px;
+    width: 50px;
+    left: random(30) + px;
+  }
 }
 
 @keyframes catsvg-anim {

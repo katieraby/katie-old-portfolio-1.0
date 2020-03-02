@@ -24,7 +24,7 @@
         .section__h2--contact {
           display: none; } }
     .section__h2--text-pink {
-      color: #F1B9CB; }
+      color: #f1b9cb; }
     .section__h2--title {
       font-size: 50px; }
     @media only screen and (max-width: 640px) {
@@ -69,7 +69,7 @@
     font-size: 16px;
     font-weight: 700;
     line-height: 1.2;
-    color: #F1B9CB; }
+    color: #f1b9cb; }
 
 .nav {
   text-align: center;
@@ -79,7 +79,7 @@
     font-family: "Lato", "Lucida Grande", Helvetica, Arial, sans-serif;
     font-size: 24px;
     font-weight: 700;
-    color: #F1B9CB;
+    color: #f1b9cb;
     text-decoration: none;
     text-transform: uppercase;
     margin: 0px 40px; }
@@ -88,7 +88,7 @@
         display: block;
         margin-bottom: 15px; } }
 
-.cls-1 {
+.cat-fill {
   fill: none; }
 
 .catsvg {
@@ -97,7 +97,7 @@
   stroke-dasharray: 141;
   stroke-dashoffset: 141;
   overflow: visible;
-  top: 113px;
+  top: 55px;
   left: 65px;
   height: 100px;
   width: 100px;
@@ -244,7 +244,7 @@
       display: block;
       padding-bottom: 3px;
       padding-left: 0px;
-      color: #F1B9CB;
+      color: #f1b9cb;
       font-size: 16px; }
   .card__side {
     -webkit-backface-visibility: hidden;
@@ -315,7 +315,7 @@
   padding-top: 25px;
   font-size: 15px;
   font-family: "Lato", "Lucida Grande", Helvetica, Arial, sans-serif;
-  color: #F1B9CB;
+  color: #f1b9cb;
   margin: 0;
   opacity: 1;
   -webkit-transition: 0.333s ease top, 0.333s ease opacity;
@@ -335,10 +335,10 @@
   resize: none; }
   .form__input-field:focus {
     box-shadow: none;
-    border-color: #F1B9CB; }
+    border-color: #f1b9cb; }
   .form__input-field:hover {
     box-shadow: none;
-    border-color: #F1B9CB; }
+    border-color: #f1b9cb; }
   .form__input-field--textarea {
     height: 60px; }
   @media only screen and (max-width: 640px) {
@@ -359,14 +359,14 @@
   text-transform: uppercase;
   transition: all 0.25s ease 0s; }
   .form__button:hover {
-    border-color: #F1B9CB;
-    color: #F1B9CB; }
+    border-color: #f1b9cb;
+    color: #f1b9cb; }
   .form__button:active {
-    border-color: #F1B9CB;
-    color: #F1B9CB; }
+    border-color: #f1b9cb;
+    color: #f1b9cb; }
   .form__button:focus {
-    border-color: #F1B9CB;
-    color: #F1B9CB; }
+    border-color: #f1b9cb;
+    color: #f1b9cb; }
   @media only screen and (max-width: 640px) {
     .form__button {
       width: 100%; } }
