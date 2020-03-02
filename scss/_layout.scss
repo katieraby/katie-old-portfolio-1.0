@@ -171,10 +171,10 @@
   &__side {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    position: absolute;
     @include size(100%, 100%);
     border-radius: 5px;
     background-color: white;
+    position: relative;
 
     &--front {
       z-index: 1;
@@ -183,9 +183,11 @@
     }
 
     &--back {
+      top: 0;
       transform: rotateY(180deg);
       width: 100%;
       height: 100%;
+      position: absolute;
     }
   }
 }
