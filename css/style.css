@@ -53,6 +53,13 @@
     @media only screen and (max-width: 640px) {
       .section__p {
         margin-bottom: 30px; } }
+    .section__p--mob {
+      display: none; }
+      @media only screen and (max-width: 640px) {
+        .section__p--mob {
+          display: block;
+          margin-bottom: 10px;
+          margin-top: -10px; } }
 
 .footer {
   text-align: center;
@@ -90,8 +97,8 @@
   stroke-dasharray: 141;
   stroke-dashoffset: 141;
   overflow: visible;
-  top: 174px;
-  left: 58px;
+  top: 113px;
+  left: 65px;
   height: 100px;
   width: 100px;
   animation: catsvg-anim 3s linear 0s forwards;
@@ -100,7 +107,7 @@
     .catsvg {
       height: 50px;
       width: 50px;
-      left: 17px; } }
+      left: 3px; } }
 
 @keyframes catsvg-anim {
   0% {
@@ -170,7 +177,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto auto;
-  grid-row-gap: 2.5em;
+  grid-row-gap: 2em;
   justify-items: center;
   z-index: -1; }
   @media only screen and (min-width: 640px) and (max-width: 980px) {
