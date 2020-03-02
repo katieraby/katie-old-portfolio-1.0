@@ -1,4 +1,4 @@
-const cards = document.querySelectorAll(".projects__card");
+const cards = document.querySelectorAll(".card");
 
 function transition() {
   if (this.classList.contains("active")) {
