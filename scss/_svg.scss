@@ -1,3 +1,4 @@
+//cat SVG
 .cat-fill {
   fill: none;
 }
@@ -8,8 +9,6 @@
   stroke-dasharray: 141;
   stroke-dashoffset: 141;
   overflow: visible;
-  top: random(250) + px;
-  left: random(100) + px;
   height: 100px;
   width: 100px;
   animation: catsvg-anim 3s linear 0s forwards;
@@ -18,13 +17,56 @@
   @media only screen and (max-width: 640px) {
     height: 50px;
     width: 50px;
-    left: random(30) + px;
+    left: inherit - 50px;
+  }
+
+  &__left {
+    //top values up to 35vh
+    //left values up to 30vw
   }
 }
 
 @keyframes catsvg-anim {
   0% {
     stroke-dashoffset: 141px;
+  }
+  100% {
+    stroke-dashoffset: 0px;
+  }
+}
+
+//flowers SVG
+.flowers-fill {
+  fill: none;
+}
+
+.flowers {
+  position: absolute;
+  stroke: #000;
+  stroke-dasharray: 492;
+  stroke-dashoffset: 492;
+  overflow: visible;
+  height: 100px;
+  width: 100px;
+  animation: flowers-anim 3s linear 1.5s forwards;
+
+  @media only screen and (max-width: 640px) {
+    height: 50px;
+    width: 50px;
+    left: inherit - 50px;
+  }
+
+  &__left {
+    transform: scaleX(-1);
+    transform: rotate(-10deg);
+    //top values up to 35vh
+    //left values up to 30vw
+  }
+}
+
+@keyframes flowers-anim {
+  0% {
+    stroke-dashoffset: 492px;
   }
   100% {
     stroke-dashoffset: 0px;
