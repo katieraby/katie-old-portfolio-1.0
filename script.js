@@ -1,6 +1,8 @@
 const cards = document.querySelectorAll(".card");
+console.log(cards);
 
-function transition() {
+function transition(event) {
+  console.log(event);
   if (this.classList.contains("active")) {
     this.classList.remove("active");
   } else {
