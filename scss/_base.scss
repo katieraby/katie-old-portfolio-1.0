@@ -58,10 +58,16 @@
     font-weight: $font-regular;
     line-height: 1.2;
     color: $gray-blue;
-    margin-bottom: 50px;
+    margin-bottom: 35px;
 
     @media only screen and (max-width: 640px) {
       font-size: $mob-h3-size;
+      margin-bottom: 30px;
+    }
+
+    &--span {
+      display: inline-block;
+      margin-top: -10px;
       margin-bottom: 30px;
     }
   }
