@@ -1,7 +1,7 @@
 .section {
   padding: 10px 30px 10px 30px; }
   .section__h1 {
-    margin-top: 100px;
+    margin-top: 80px;
     text-align: center; }
     @media only screen and (max-width: 640px) {
       .section__h1 {
@@ -157,6 +157,32 @@
   100% {
     stroke-dashoffset: 0px; } }
 
+.heart-fill {
+  fill: none; }
+
+.heart {
+  position: absolute;
+  stroke: #7d5ba6;
+  stroke-dasharray: 288;
+  stroke-dashoffset: 288;
+  overflow: visible;
+  height: 100px;
+  width: 100px;
+  animation: hearts-anim 3s linear 1.5s forwards;
+  transform: rotate(-10deg); }
+  @media only screen and (max-width: 640px) {
+    .heart {
+      height: 50px;
+      width: 50px;
+      left: inherit-50px;
+      top: inherit-60vh; } }
+
+@keyframes hearts-anim {
+  0% {
+    stroke-dashoffset: 288px; }
+  100% {
+    stroke-dashoffset: 0px; } }
+
 .intro {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
@@ -174,6 +200,11 @@
     grid-area: SVG-left; }
     @media only screen and (max-width: 640px) {
       .intro__left {
+        display: inline-block; } }
+  .intro__right {
+    grid-area: SVG-right; }
+    @media only screen and (max-width: 640px) {
+      .intro__right {
         display: inline-block; } }
   .intro__img {
     width: 140px;

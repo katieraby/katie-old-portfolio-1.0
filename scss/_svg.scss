@@ -73,3 +73,41 @@
     stroke-dashoffset: 0px;
   }
 }
+
+//heart SVG
+.heart-fill {
+  fill: none;
+}
+
+.heart {
+  position: absolute;
+  stroke: $svg-color;
+  stroke-dasharray: 288;
+  stroke-dashoffset: 288;
+  overflow: visible;
+  height: 100px;
+  width: 100px;
+  animation: hearts-anim 3s linear 1.5s forwards;
+  transform: rotate(-10deg);
+
+  @media only screen and (max-width: 640px) {
+    height: 50px;
+    width: 50px;
+    left: inherit - 50px;
+    top: inherit - 60vh;
+  }
+
+  &__right {
+    //top values up to 35vh
+    //right values up to ??
+  }
+}
+
+@keyframes hearts-anim {
+  0% {
+    stroke-dashoffset: 288px;
+  }
+  100% {
+    stroke-dashoffset: 0px;
+  }
+}
