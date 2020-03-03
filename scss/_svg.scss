@@ -5,7 +5,7 @@
 
 .catsvg {
   position: absolute;
-  stroke: #000;
+  stroke: $svg-color;
   stroke-dasharray: 141;
   stroke-dashoffset: 141;
   overflow: visible;
@@ -42,7 +42,7 @@
 
 .flowers {
   position: absolute;
-  stroke: #000;
+  stroke: $svg-color;
   stroke-dasharray: 492;
   stroke-dashoffset: 492;
   overflow: visible;
