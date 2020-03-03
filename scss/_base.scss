@@ -24,7 +24,7 @@
     font-size: $h2-size;
     font-weight: $font-bold;
     line-height: 1.5;
-    color: $main-copy-color;
+    color: $gray-blue;
     letter-spacing: 1px;
 
     &--contact {
@@ -53,11 +53,11 @@
 
   &__h3 {
     text-align: center;
-    font-family: $font-stack-p;
+    font-family: $font-stack-main;
     font-size: $h3-size;
     font-weight: $font-regular;
     line-height: 1.2;
-    color: $main-copy-color;
+    color: $gray-blue;
     margin-bottom: 50px;
 
     @media only screen and (max-width: 640px) {
@@ -68,7 +68,7 @@
 
   &__p {
     text-align: center;
-    font-family: $font-stack-p;
+    font-family: $font-stack-main;
     font-size: $p-copy-size;
     color: $main-copy-color;
     margin-bottom: 90px;
@@ -108,13 +108,30 @@
   margin-bottom: 40px;
 
   &__a {
-    font-family: $font-stack-p;
+    display: inline-block;
+    position: relative;
+    font-family: $font-stack-main;
     font-size: $nav-text-size;
     font-weight: $font-bold;
     color: $darker-pink;
     text-decoration: none;
     text-transform: uppercase;
     margin: 0px 40px;
+
+    &:before {
+      background: $nav-hover-pink none repeat scroll 0 0;
+      bottom: -6px;
+      content: "";
+      height: 3px;
+      left: 0;
+      position: absolute;
+      width: 0%;
+      transition: 0.5s;
+    }
+
+    &:hover:before {
+      width: 100%;
+    }
 
     @media screen and (max-width: 588px) {
       display: block;

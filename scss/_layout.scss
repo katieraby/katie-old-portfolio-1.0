@@ -162,7 +162,7 @@
   }
 
   &__p {
-    font-family: $font-stack-p;
+    font-family: $font-stack-main;
     color: $main-copy-color;
     padding: 4px 15px;
     overflow-wrap: break-word;
@@ -271,7 +271,7 @@
     display: block;
     padding-top: 25px;
     font-size: 15px;
-    font-family: $font-stack-p;
+    font-family: $font-stack-main;
     color: $darker-pink;
     margin: 0;
     opacity: 1;
@@ -319,7 +319,7 @@
     border: 1px solid #2f323a;
     border-radius: 3px;
     color: #2f323a;
-    font-family: $font-stack-p;
+    font-family: $font-stack-main;
     font-size: 16px;
     line-height: inherit;
     margin: 30px 0;
