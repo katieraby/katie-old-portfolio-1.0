@@ -14,7 +14,7 @@ cards.forEach(card => card.addEventListener("click", transition));
 const slideUp = {
   delay: 125,
   distance: "50px",
-  duration: 300,
+  duration: 200,
   easing: "ease-in"
 };
 
