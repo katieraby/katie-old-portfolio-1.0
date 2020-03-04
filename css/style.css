@@ -26,7 +26,9 @@
     .section__h2--text-pink {
       color: #f1b9cb; }
     .section__h2--title {
-      font-size: 50px; }
+      font-size: 50px;
+      background-color: white;
+      z-index: 1; }
     @media only screen and (max-width: 640px) {
       .section__h2 {
         margin-top: 5px;
@@ -166,8 +168,8 @@
   stroke-dasharray: 288;
   stroke-dashoffset: 288;
   overflow: visible;
-  height: 100px;
-  width: 100px;
+  height: 80px;
+  width: 80px;
   animation: hearts-anim 3s linear 1.5s forwards;
   transform: rotate(-10deg); }
   @media only screen and (max-width: 640px) {
@@ -210,7 +212,7 @@
     width: 140px;
     height: 140px;
     object-fit: cover;
-    object-position: -10% 12%;
+    object-position: 25% 12%;
     box-shadow: 0px 4px 7px #0000004d;
     border-radius: 50%; }
   .intro__img:hover {
