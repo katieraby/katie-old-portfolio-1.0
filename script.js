@@ -11,15 +11,6 @@ function transition() {
 
 cards.forEach(card => card.addEventListener("click", transition));
 
-const slideUp = {
-  delay: 125,
-  distance: "50px",
-  duration: 200,
-  easing: "ease-in"
-};
-
-ScrollReveal().reveal(".card", slideUp);
-
 //scripts for randomising positions of SVGs
 //left quadrant
 const topPositionLeft = Math.floor(Math.random() * 35);

@@ -167,6 +167,11 @@
     object-fit: cover;
     object-position: 0 0;
     border-radius: 5px 5px 0 0;
+    border-bottom: 7px solid $darker-pink;
+  }
+
+  &__a {
+    display: block;
   }
 
   &__p {

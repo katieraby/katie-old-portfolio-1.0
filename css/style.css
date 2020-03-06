@@ -54,6 +54,7 @@
     text-align: center;
     font-family: "Josefin Sans", sans-serif;
     font-size: 16px;
+    font-weight: 400;
     color: #707070;
     margin-bottom: 90px; }
     @media only screen and (max-width: 640px) {
@@ -306,7 +307,10 @@
     height: 300px;
     object-fit: cover;
     object-position: 0 0;
-    border-radius: 5px 5px 0 0; }
+    border-radius: 5px 5px 0 0;
+    border-bottom: 7px solid #f1b9cb; }
+  .card__a {
+    display: block; }
   .card__p {
     text-align: center;
     font-family: "Josefin Sans", sans-serif;

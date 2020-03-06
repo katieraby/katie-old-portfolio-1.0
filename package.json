@@ -21,7 +21,5 @@
   "devDependencies": {
     "node-sass": "^4.13.1"
   },
-  "dependencies": {
-    "scrollreveal": "^4.0.5"
-  }
+  "dependencies": {}
 }
