@@ -132,9 +132,8 @@
   align-content: flex-start;
 
   &__container {
-    // align-items: center;
     position: relative;
-    width: 400px;
+    width: 420px;
     min-height: 300px;
     perspective: 1000px;
 
@@ -194,6 +193,7 @@
   }
 
   &__p {
+    margin: 10px 5px;
     text-align: center;
     font-family: $font-stack-main;
     color: $main-copy-color;
@@ -201,14 +201,14 @@
     overflow-wrap: break-word;
     word-wrap: break-word;
     hyphens: none;
-    font-size: $p-copy-size;
+    font-size: $p--card-copy-size;
 
     &--title {
       display: block;
       padding-bottom: 3px;
       padding-left: 0px;
       color: $darker-pink;
-      font-size: $p-copy-size;
+      font-size: $p--card-copy-size;
     }
   }
 
@@ -243,10 +243,9 @@
 
   &__button {
     display: inline-block;
-    padding: 5px 10px;
+    padding: 10px 10px;
     margin-top: 12px;
     border: solid 2px $nav-hover-pink;
-    border-radius: 10px 15px;
   }
 }
 
