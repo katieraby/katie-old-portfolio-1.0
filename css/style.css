@@ -358,9 +358,10 @@
       position: absolute; }
   .card__buttonContainer {
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center; }
   .card__button {
-    display: inline-block;
     padding: 10px 10px;
     margin-top: 12px;
     border: solid 2px #ffd9e5; }
