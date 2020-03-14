@@ -144,7 +144,7 @@
   overflow: visible;
   height: 100px;
   width: 100px;
-  animation: flowers-anim 3s linear 1.5s forwards;
+  animation: flowers-anim 5s linear 1.5s forwards;
   transform: scaleX(-1);
   transform: rotate(-10deg); }
   @media only screen and (max-width: 640px) {
@@ -153,6 +153,11 @@
       width: 50px;
       left: inherit-50px;
       top: inherit-60vh; } }
+  @media only screen and (max-width: 640px) {
+    .flowers__left {
+      display: none; } }
+  .flowers__right {
+    transform: rotate(40deg); }
 
 @keyframes flowers-anim {
   0% {
@@ -177,8 +182,11 @@
     .heart {
       height: 50px;
       width: 50px;
-      left: inherit-50px;
+      right: inherit-50px;
       top: inherit-60vh; } }
+  @media only screen and (max-width: 640px) {
+    .heart__right {
+      display: none; } }
 
 @keyframes hearts-anim {
   0% {

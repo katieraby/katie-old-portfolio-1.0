@@ -12,22 +12,34 @@ function transition() {
 cards.forEach(card => card.addEventListener("click", transition));
 
 //scripts for randomising positions of SVGs
-//left quadrant
-const topPositionLeft = Math.floor(Math.random() * 35);
-const leftPositionLeft = Math.floor(Math.random() * 25);
-const leftPositionMidLeft = Math.floor(Math.random() * 20);
+//left or right quadrants
+const topPositionAll = Math.floor(Math.random() * 35);
+const leftOrRightPosition = Math.floor(Math.random() * 25);
+const leftOrRightPositionMid = Math.floor(Math.random() * 20);
 
-// middle-end left quadrant for top value
-const topPositionMidLeft = Math.floor(Math.random() * 64 + 36);
+// middle-end quadrant for top value
+const topPositionMid = Math.floor(Math.random() * 64 + 36);
 
 const leftCats = document.querySelectorAll(".catsvg__left");
 leftCats.forEach(cat => {
-  cat.style.setProperty("top", topPositionLeft + "vh");
-  cat.style.setProperty("left", leftPositionLeft + "vw");
+  cat.style.setProperty("top", topPositionAll + "vh");
+  cat.style.setProperty("left", leftOrRightPosition + "vw");
 });
 
 const leftFlowers = document.querySelectorAll(".flowers__left");
 leftFlowers.forEach(flower => {
-  flower.style.setProperty("top", topPositionMidLeft + "vh");
-  flower.style.setProperty("left", leftPositionMidLeft + "vw");
+  flower.style.setProperty("top", topPositionMid + "vh");
+  flower.style.setProperty("left", leftOrRightPositionMid + "vw");
+});
+
+const rightFlowers = document.querySelectorAll(".flowers__right");
+rightFlowers.forEach(flower => {
+  flower.style.setProperty("top", topPositionAll + "vh");
+  flower.style.setProperty("right", leftOrRightPosition + "vw");
+});
+
+const rightHeart = document.querySelectorAll(".heart__right");
+rightHeart.forEach(heart => {
+  heart.style.setProperty("top", topPositionMid + "vh");
+  heart.style.setProperty("right", leftOrRightPositionMid + "vw");
 });
