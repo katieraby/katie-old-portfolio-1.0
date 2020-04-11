@@ -3,6 +3,9 @@ html {
 
 .section {
   padding: 10px 30px 10px 30px; }
+  @media only screen and (max-width: 640px) {
+    .section {
+      padding: 7px; } }
   .section__h1 {
     margin-top: 80px;
     text-align: center; }
@@ -354,12 +357,18 @@ html {
     word-wrap: break-word;
     hyphens: none;
     font-size: 19px; }
+    @media only screen and (max-width: 640px) {
+      .card__p {
+        font-size: 17px; } }
     .card__p--title {
       display: block;
       padding-bottom: 3px;
       padding-left: 0px;
       color: #eea1ba;
       font-size: 19px; }
+      @media only screen and (max-width: 640px) {
+        .card__p--title {
+          font-size: 17px; } }
   .card__side {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;

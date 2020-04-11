@@ -212,12 +212,20 @@
     hyphens: none;
     font-size: $p--card-copy-size;
 
+    @media only screen and (max-width: 640px) {
+      font-size: $p--card-mob-size;
+    }
+
     &--title {
       display: block;
       padding-bottom: 3px;
       padding-left: 0px;
       color: $darker-pink;
       font-size: $p--card-copy-size;
+
+      @media only screen and (max-width: 640px) {
+        font-size: $p--card-mob-size;
+      }
     }
   }
 
