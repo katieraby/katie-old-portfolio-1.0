@@ -359,7 +359,7 @@ html {
     font-size: 19px; }
     @media only screen and (max-width: 640px) {
       .card__p {
-        font-size: 17px; } }
+        font-size: 16.5px; } }
     .card__p--title {
       display: block;
       padding-bottom: 3px;
@@ -368,7 +368,7 @@ html {
       font-size: 19px; }
       @media only screen and (max-width: 640px) {
         .card__p--title {
-          font-size: 17px; } }
+          font-size: 16.5px; } }
   .card__side {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
