@@ -167,6 +167,8 @@
     box-shadow: 0 14px 50px -4px hsla(0, 0%, 0%, 0.15);
     opacity: 0;
     transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1.4);
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
   }
 
   &:hover {
@@ -300,6 +302,8 @@
 
 .active {
   transform: translateZ(0px) rotateY(180deg) !important;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
 
   &:after {
     display: none;
