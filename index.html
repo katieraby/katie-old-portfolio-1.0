@@ -130,8 +130,9 @@
           Code club.
         </h3>
         <span class="section__h3 section__h3--span">
-          My current tech stack is JavaScript full-stack (inc. node.js, Express,
-          React, PostgreSQL, REST and more!)
+          My technical skills include: JavaScript, React.js, HTML/CSS/SCSS,
+          Express, PostgreSQL, REST APIs, GraphQL, MongoDB, Dart, Flutter,
+          Python and more!
         </span>
 
         <div class="intro__icons">
@@ -175,15 +176,55 @@
       <div class="projects__container">
         <div class="card">
           <div class="card__side card__side--front">
-            <img
-              class="card__img"
-              src="https://nextfeed.com/wp-content/uploads/fat-cat.jpg"
-            />
+            <img class="card__img" src="./assets/img/mobile-app-stock.jpg" />
+            <p class="card__p">
+              <strong class="card__p card__p--title">
+                A mobile app for the vulnerable during a crisis to pair up with
+                volunteers to get help with their shopping.
+              </strong>
+              <span class="card__buttonContainer">
+                <span class="card__button">GraphQL</span>
+                <span class="card__button">MongoDB</span>
+                <span class="card__button">Dart</span>
+                <span class="card__button">Flutter</span>
+              </span>
+            </p>
+          </div>
+          <div class="card__side card__side--back">
+            <p class="card__p">
+              <strong>
+                <span class="card__p card__p--title"
+                  >Group project completed in a team of 3 in two weeks. Tech stack used on this project was an Express JS back-end, with a MongoDB database and GraphQL for data query. We learnt both Dart and Flutter from scratch to create our mobile app's front-end.
+                </span>
+              </strong>
+  A challenge on this project included team drop-outs, emphasising the need for careful planning and consideration of minimum viable product. Another challenge was the integration of GraphQL and Flutter which was more difficult than anticipated.
+
+              <div class="card__link card__link--two">
+                  <a
+                    target="_blank"
+                    class="card__a"
+                    href="#"
+                    >Link to the front-end repository
+                  </a> 
+              </div>
+              <div class="card__link">
+                <a target="_blank" class="card__a" href="#">
+                  Link to the back-end repository
+                </a>
+              </div>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="projects__container">
+        <div class="card">
+          <div class="card__side card__side--front">
+            <img class="card__img" src="./assets/img/nftn-fe.png" />
             <p class="card__p">
               <strong
                 ><span class="card__p card__p--title"
-                  >React front-end for Reddit style news site, utilising data
-                  from News from the Northcoders API.</span
+                  >React front-end for news aggregation web app, utilising data
+                  from my News from the Northcoders REST API.</span
                 ></strong
               >
               <span class="card__buttonContainer">
@@ -198,13 +239,20 @@
             <p class="card__p">
               <strong
                 ><span class="card__p card__p--title"
-                  >Challenges faced during this project:</span
+                  >React web application news site with a simulated login system. When 'logged in', users can post an article or a comment, and delete anything they have posted. Users can sort articles, up and down vote articles and comments. App also has pagination to click through pages of articles or comments.</span
                 ></strong
               >
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat, sed diam voluptua.
+              Future features would include: Ability to register a new user and login with that user's details. Authentication using JWT on the back-end.
             </p>
+            <div class="card__link card__link--two">
+              <a target="_blank" class="card__a" href="https://news-from-the-northcoders.netlify.com/">Link to the hosted project
+              </a>
+            </div>
+            <div class="card__link">
+              <a target="_blank" class="card__a" href="https://github.com/katieraby/news-from-the-northcoders-fe">
+                Link to the repository
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -230,23 +278,25 @@
           <div class="card__side card__side--back">
             <p class="card__p">
               <strong
-                ><span class="card__p card__p--title"
-                  >Challenges faced during this project:</span
-                ></strong
-              >
-              <a
+                > <span class="card__p card__p--title"
+                  >A RESTful API, created using MVC architecture (model-view-controller), serving up a number of endpoints for GET, POST, PATCH, and DELETE requests for news/articles/users information. The API also has pagination, limiting the number of article or comment requests to 10.</span
+                > </strong
+              >The API was created using Node.js, Express JS, paired with Knex.js - an SQL query builder for Postgres, which was also used. Future improvements could include authentication using JWT to allow login.
+            </p>
+              <div class="card__link card__link--two"><a
                 target="_blank"
                 class="card__a"
                 href="https://news-from-the-northcoders-api.herokuapp.com/api"
-                >Link to the project</a
-              >
+                >Link to the hosted API </a
+              > </div>
+              <div class="card__link">
               <a
                 target="_blank"
                 class="card__a"
                 href="https://github.com/katieraby/northcoders-news-API"
-                >Link to the repository</a
-              >
-            </p>
+                >Link to the repository </a
+              > </div>
+            
           </div>
         </div>
       </div>
@@ -260,8 +310,7 @@
             <p class="card__p">
               <strong
                 ><span class="card__p card__p--title"
-                  >Quakr - a React web application, providing a data
-                  visualisation from an earthquake API.
+                  >React web application, displaying earthquake data.
                 </span></strong
               >
               <span class="card__buttonContainer">
@@ -277,25 +326,23 @@
               <strong
                 ><span class="card__p card__p--title"
                   >A single page application using real-time web API calls to
-                  bring in current data on earthquakes.
+                  bring in current data on earthquakes. Quakr has a responsive UI and a drop-down filters menu. Each pointer on the map has location, time and a link.
                 </span></strong
               >
-              Quakr has a responsive UI and a drop-down filters menu, so the
-              user can filter the earthquake points by magnitude and time. When
-              the user clicks on a pointer, there are pull-outs detailing time,
-              exact location and a link for more information.
-              <a
+              The map visualiation was created using React-Leaflet - a third party implementation of Leaflet JS. Using this package brought some challenges, as the React docs were not as comprehensive, so I had to search for additional resources.
+              <div class="card__link card__link--two"><a
                 target="_blank"
                 class="card__a"
                 href="https://katieannabelle.dev/quakr-earthquake-react-visualisation"
-                >Link to the project</a
-              >
+                >Link to the hosted project</a
+              ></div>
+              <div class="card__link">
               <a
                 target="_blank"
                 class="card__a"
                 href="https://github.com/katieraby/quakr-earthquake-react-visualisation"
                 >Link to the repository</a
-              >
+              ></div>
             </p>
           </div>
         </div>
@@ -305,7 +352,7 @@
           <div class="card__side card__side--front">
             <img
               class="card__img"
-              src="https://nextfeed.com/wp-content/uploads/fat-cat.jpg"
+              src="./assets/img/library.jpeg"
             />
             <p class="card__p">
               <strong
@@ -328,13 +375,14 @@
                   >A bookshelf web app created using React and data from the
                   Google Books API. Books can be moved from the "want to read"
                   to the "finished" bookcase using drag and drop
-                  functionality.</span
+                  functionality, created with Atlassian's Beautiful Drag N Drop package.</span
                 ></strong
               >
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat, sed diam voluptua.
+              As a relatively new user to React when creating this project, I set myself the challenge of using a new third-party package to accomplish something different. I love the drag 'n' drop effect! To improve this project, I would work on the UI design, and allow users to add multiple bookcases - but for now this is a personal project.
             </p>
+            <div class="card__link">
+              <a target="_blank" class="card__a" href="#">Link to
+                the repository</a></div>
           </div>
         </div>
       </div>
@@ -343,7 +391,7 @@
           <div class="card__side card__side--front">
             <img
               class="card__img"
-              src="https://nextfeed.com/wp-content/uploads/fat-cat.jpg"
+              src="./assets/img/python-anywhere-blog.png"
             />
             <p class="card__p">
               <strong
@@ -364,63 +412,23 @@
               <strong
                 ><span class="card__p card__p--title"
                   >The blog contains an admin login/back-end, whereby an admin
-                  user has the ability to manage posts. Coded during Django
+                  user has the ability to manage posts. Any user at present can add a new post to the blog. Coded during Django
                   Girls Chester 2019.
                 </span></strong
-              ><a
+              > Participating in Django Girls was an amazing experience for me, and an opportunity to network with other girls enthusiastic about tech! The blog was created across two days, and was my first experience with coding in python and django.
+              
+              <div class="card__link card__link--two"><a
                 target="_blank"
                 class="card__a"
                 href="http://katieraby.pythonanywhere.com/"
-                >Link to the project</a
-              >
+                >Link to the hosted project</a
+              ></div><div class="card__link">
               <a
                 target="_blank"
                 class="card__a"
                 href="https://github.com/katieraby/my-first-blog"
-                >Link to the repository</a
-              >
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="projects__container">
-        <div class="card">
-          <div class="card__side card__side--front">
-            <img
-              class="card__img"
-              src="./assets/img/Portfolio-screenshot.png"
-            />
-            <p class="card__p">
-              <strong class="card__p card__p--title">
-                Personal portfolio website showcasing my projects.
-              </strong>
-              <span class="card__buttonContainer">
-                <span class="card__button">HTML</span>
-                <span class="card__button">SCSS</span>
-                <span class="card__button">BEM</span>
-                <span class="card__button">JavaScript</span>
-              </span>
-            </p>
-          </div>
-          <div class="card__side card__side--back">
-            <p class="card__p">
-              <strong
-                ><span class="card__p card__p--title"
-                  >Demonstrating use of CSS preprocessor, SVG manipulation and
-                  animation, JavaScript interacting with the DOM, semantic HTML,
-                  and the use of BEM methodology to structure the SCSS.</span
-                ></strong
-              >
-
-              A challenge on this project included learning and using SASS and
-              BEM together in a live project. To help with this I looked at the
-              BEM documentation and read up around examples of best practice.
-              <a
-                target="_blank"
-                class="card__a"
-                href="https://github.com/katieraby/katieraby.github.io"
-                >Link to the repository</a
-              >
+                >Link to the repository </a
+              ></div>
             </p>
           </div>
         </div>

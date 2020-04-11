@@ -151,9 +151,10 @@
 
 .card {
   cursor: pointer;
+  margin-top: 20px;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
-  transform: translateZ(-100px);
+  transform: translateZ(-60px);
   transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
@@ -186,12 +187,18 @@
     height: 300px;
     object-fit: cover;
     object-position: 0 0;
-    border-radius: 5px 5px 0 0;
+    margin-top: -5px;
+    border-radius: 5px 5px 0px 0px;
     border-bottom: 7px solid $darker-pink;
   }
 
   &__a {
     display: block;
+    color: #fff;
+    text-decoration: none;
+    font-family: $font-stack-main;
+    letter-spacing: 1.4;
+    font-size: 20px;
   }
 
   &__p {
@@ -217,12 +224,11 @@
   &__side {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    // @include size(100%, 100%);
-    border-radius: 5px;
     background-color: white;
     position: relative;
 
     &--front {
+      border-radius: 5px;
       padding: 3px 0px;
       z-index: 1;
       width: 100%;
@@ -232,9 +238,36 @@
     &--back {
       top: 0;
       transform: rotateY(180deg);
+      display: flex;
+      justify-content: center;
       width: 100%;
       height: 100%;
       position: absolute;
+    }
+  }
+
+  &__link {
+    position: absolute;
+    bottom: 16px;
+    @include size(calc(100% - 32px), 56px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: pink;
+    background-image: linear-gradient(
+      90deg,
+      rgba(255, 215, 246, 0.8645833333333334) 27%,
+      rgba(255, 138, 184, 0.6629026610644257) 96%
+    );
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover {
+      transform: translateX(0px);
+    }
+
+    &--two {
+      bottom: 80px;
     }
   }
 
@@ -249,6 +282,7 @@
     padding: 10px 10px;
     margin-top: 12px;
     border: solid 2px $nav-hover-pink;
+    border-radius: 8px;
   }
 }
 
