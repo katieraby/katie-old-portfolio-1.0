@@ -270,6 +270,10 @@
     border-radius: 5px;
     cursor: pointer;
 
+    @media only screen and (max-width: 640px) {
+      margin-top: 10px;
+    }
+
     &:hover {
       transform: translateX(0px);
     }

@@ -400,6 +400,9 @@ html {
     background-image: linear-gradient(90deg, rgba(255, 215, 246, 0.864583) 27%, rgba(255, 138, 184, 0.662903) 96%);
     border-radius: 5px;
     cursor: pointer; }
+    @media only screen and (max-width: 640px) {
+      .card__link {
+        margin-top: 10px; } }
     .card__link:hover {
       transform: translateX(0px); }
     .card__link--two {
