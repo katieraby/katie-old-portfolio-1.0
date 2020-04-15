@@ -374,6 +374,7 @@ html {
   .card__side {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+    transform: rotateX(0deg);
     background-color: white;
     position: relative; }
     .card__side--front {
